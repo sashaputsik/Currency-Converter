@@ -58,16 +58,80 @@
 		9FD746542473E15700454143 /* Currency Converter */ = {
 			isa = PBXGroup;
 			children = (
-				9FD746552473E15700454143 /* AppDelegate.swift */,
-				9FD746572473E15700454143 /* SceneDelegate.swift */,
-				9FD746592473E15700454143 /* ViewController.swift */,
-				9FD7465B2473E15700454143 /* Main.storyboard */,
-				9FD746612473E15900454143 /* Assets.xcassets */,
-				9FD746632473E15900454143 /* LaunchScreen.storyboard */,
-				9FD746662473E15900454143 /* Info.plist */,
-				9FD7465E2473E15700454143 /* Currency_Converter.xcdatamodeld */,
+				9FD7466C2473E1A100454143 /* AppFiles */,
+				9FD7466F2473E1BE00454143 /* Models */,
+				9FD746722473E21800454143 /* StroryBoards */,
 			);
 			path = "Currency Converter";
+			sourceTree = "<group>";
+		};
+		9FD7466C2473E1A100454143 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9FD746742473E23C00454143 /* Files */,
+				9FD746702473E1C500454143 /* Extensions */,
+				9FD7466E2473E1B600454143 /* Views */,
+				9FD7466D2473E1AF00454143 /* Base */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		9FD7466D2473E1AF00454143 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9FD7466E2473E1B600454143 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FD7466F2473E1BE00454143 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FD746712473E1D100454143 /* Main View Controller */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FD746702473E1C500454143 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FD746712473E1D100454143 /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FD746592473E15700454143 /* ViewController.swift */,
+			);
+			path = "Main View Controller";
+			sourceTree = "<group>";
+		};
+		9FD746722473E21800454143 /* StroryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				9FD7465B2473E15700454143 /* Main.storyboard */,
+			);
+			path = StroryBoards;
+			sourceTree = "<group>";
+		};
+		9FD746742473E23C00454143 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FD746632473E15900454143 /* LaunchScreen.storyboard */,
+				9FD746552473E15700454143 /* AppDelegate.swift */,
+				9FD746612473E15900454143 /* Assets.xcassets */,
+				9FD746572473E15700454143 /* SceneDelegate.swift */,
+				9FD7465E2473E15700454143 /* Currency_Converter.xcdatamodeld */,
+				9FD746662473E15900454143 /* Info.plist */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W64W8UKVB6;
-				INFOPLIST_FILE = "Currency Converter/Info.plist";
+				INFOPLIST_FILE = "Currency Converter/AppFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W64W8UKVB6;
-				INFOPLIST_FILE = "Currency Converter/Info.plist";
+				INFOPLIST_FILE = "Currency Converter/AppFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
