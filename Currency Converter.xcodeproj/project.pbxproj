@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F48170B247ADFF8007D8BDD /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48170A247ADFF8007D8BDD /* Converter.swift */; };
+		9F48170D247AE00C007D8BDD /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48170C247AE00C007D8BDD /* MainData.swift */; };
 		9FD746562473E15700454143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD746552473E15700454143 /* AppDelegate.swift */; };
 		9FD746582473E15700454143 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD746572473E15700454143 /* SceneDelegate.swift */; };
 		9FD7465A2473E15700454143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD746592473E15700454143 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F48170A247ADFF8007D8BDD /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		9F48170C247AE00C007D8BDD /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
 		9FD746522473E15700454143 /* Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD746552473E15700454143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD746572473E15700454143 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		9FD7466D2473E1AF00454143 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9F48170A247ADFF8007D8BDD /* Converter.swift */,
+				9F48170C247AE00C007D8BDD /* MainData.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 				9FD746602473E15700454143 /* Currency_Converter.xcdatamodeld in Sources */,
 				9FD746562473E15700454143 /* AppDelegate.swift in Sources */,
 				9FD746582473E15700454143 /* SceneDelegate.swift in Sources */,
+				9F48170D247AE00C007D8BDD /* MainData.swift in Sources */,
+				9F48170B247ADFF8007D8BDD /* Converter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
