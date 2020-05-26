@@ -10,12 +10,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var valueTextField: UITextField!
     @IBOutlet weak var timeUpdateLabel: UILabel!
     var refreshControl: UIRefreshControl!
+    @IBOutlet weak var calculatorBackView: UIView!
     var value: Float = 1.0
     var dateS = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         date()
         refresher()
+        frame()
         tableView.addSubview(refreshControl)
         valueTextField.text = "1"
         usdEqultyLabel.text = "1.0 USD = 1.0 USD"
@@ -63,5 +65,8 @@ class ViewController: UIViewController {
         date()
         print(currencyArray)
         
+    }
+    func frame(){
+        calculatorBackView.layer.cornerRadius = 10
     }
 }

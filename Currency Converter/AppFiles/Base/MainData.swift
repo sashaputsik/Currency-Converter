@@ -1,8 +1,9 @@
 import Foundation
 
 let currentUrl =  "http://api.currencylayer.com/live?access_key=7b3227866aebfd9080832df2d7371022&currencies=USD,AUD,CAD,PLN,MXN&format=1"
-let historyUrl = "http://api.currencylayer.com/historical?access_key=7b3227866aebfd9080832df2d7371022&date=2010-01-21&currencies=USD,AUD,CAD,PLN,MXN&format=1"
+
 var converterArray = [Converter]()
+var historyCurrencyArray = [NSNumber]()
 var currencyArray = [NSNumber]()
 class Converter {
     var americarDollar: NSNumber
@@ -28,3 +29,10 @@ func add(){
     currencyArray.append(converterArray.first!.polishZloty)
     
 }
+func addHistory(){
+    historyCurrencyArray.append(converterArray.last!.australianDollar)
+    historyCurrencyArray.append(converterArray.last!.canadianDollar)
+    historyCurrencyArray.append(converterArray.last!.mexicanPeso)
+    historyCurrencyArray.append(converterArray.last!.polishZloty)
+}
+

@@ -26,6 +26,9 @@ extension ViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60.0
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
 }
 
@@ -38,4 +41,5 @@ extension ViewController: UITextFieldDelegate{
         }
         tableView.reloadData()
     }
+    
 }

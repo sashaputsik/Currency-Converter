@@ -17,6 +17,10 @@
 		9F48171B247BFDF3007D8BDD /* mainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48171A247BFDF3007D8BDD /* mainTableViewCell.swift */; };
 		9F48171D247C0049007D8BDD /* Extensions+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48171C247C0049007D8BDD /* Extensions+ViewController.swift */; };
 		9F48171F247C017B007D8BDD /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48171E247C017B007D8BDD /* DataSource.swift */; };
+		9FB8571B247D853E001DEE97 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8571A247D853E001DEE97 /* history.png */; };
+		9FB8571D247D85A5001DEE97 /* bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8571C247D85A5001DEE97 /* bank.png */; };
+		9FB85720247D85F7001DEE97 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8571F247D85F7001DEE97 /* HistoryViewController.swift */; };
+		9FB85722247D8708001DEE97 /* Extensions+HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB85721247D8708001DEE97 /* Extensions+HistoryViewController.swift */; };
 		9FD746562473E15700454143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD746552473E15700454143 /* AppDelegate.swift */; };
 		9FD746582473E15700454143 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD746572473E15700454143 /* SceneDelegate.swift */; };
 		9FD7465A2473E15700454143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD746592473E15700454143 /* ViewController.swift */; };
@@ -37,6 +41,10 @@
 		9F48171A247BFDF3007D8BDD /* mainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewCell.swift; sourceTree = "<group>"; };
 		9F48171C247C0049007D8BDD /* Extensions+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+ViewController.swift"; sourceTree = "<group>"; };
 		9F48171E247C017B007D8BDD /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		9FB8571A247D853E001DEE97 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
+		9FB8571C247D85A5001DEE97 /* bank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bank.png; sourceTree = "<group>"; };
+		9FB8571F247D85F7001DEE97 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9FB85721247D8708001DEE97 /* Extensions+HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+HistoryViewController.swift"; sourceTree = "<group>"; };
 		9FD746522473E15700454143 /* Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD746552473E15700454143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD746572473E15700454143 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +78,8 @@
 		9F48170F247AE1EC007D8BDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9FB8571A247D853E001DEE97 /* history.png */,
+				9FB8571C247D85A5001DEE97 /* bank.png */,
 				9F15B2B3247C656200151D08 /* Dollar.png */,
 				9F15B2B5247C662C00151D08 /* ADollar.png */,
 				9F15B2B6247C662C00151D08 /* CDollar.png */,
@@ -77,6 +87,14 @@
 				9F15B2B7247C662C00151D08 /* PZloty.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		9FB8571E247D85DD001DEE97 /* History View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8571F247D85F7001DEE97 /* HistoryViewController.swift */,
+			);
+			path = "History View Controller";
 			sourceTree = "<group>";
 		};
 		9FD746492473E15700454143 = {
@@ -138,6 +156,7 @@
 		9FD7466F2473E1BE00454143 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9FB8571E247D85DD001DEE97 /* History View Controller */,
 				9FD746712473E1D100454143 /* Main View Controller */,
 			);
 			path = Models;
@@ -147,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				9F48171C247C0049007D8BDD /* Extensions+ViewController.swift */,
+				9FB85721247D8708001DEE97 /* Extensions+HistoryViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -238,6 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB8571B247D853E001DEE97 /* history.png in Resources */,
+				9FB8571D247D85A5001DEE97 /* bank.png in Resources */,
 				9F15B2B4247C656200151D08 /* Dollar.png in Resources */,
 				9F15B2BA247C662C00151D08 /* CDollar.png in Resources */,
 				9F15B2BC247C662C00151D08 /* MPeso.png in Resources */,
@@ -259,9 +281,11 @@
 				9FD7465A2473E15700454143 /* ViewController.swift in Sources */,
 				9F48171B247BFDF3007D8BDD /* mainTableViewCell.swift in Sources */,
 				9FD746602473E15700454143 /* Currency_Converter.xcdatamodeld in Sources */,
+				9FB85720247D85F7001DEE97 /* HistoryViewController.swift in Sources */,
 				9F48171F247C017B007D8BDD /* DataSource.swift in Sources */,
 				9FD746562473E15700454143 /* AppDelegate.swift in Sources */,
 				9F48171D247C0049007D8BDD /* Extensions+ViewController.swift in Sources */,
+				9FB85722247D8708001DEE97 /* Extensions+HistoryViewController.swift in Sources */,
 				9FD746582473E15700454143 /* SceneDelegate.swift in Sources */,
 				9F48170D247AE00C007D8BDD /* MainData.swift in Sources */,
 				9F48170B247ADFF8007D8BDD /* Converter.swift in Sources */,
