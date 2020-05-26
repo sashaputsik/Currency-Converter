@@ -1,7 +1,7 @@
 import Foundation
 
 func loadData(and complitionHandler: (()-> Void)?){
-    guard let url = URL(string: url) else{return}
+    guard let url = URL(string: currentUrl) else{return}
     let session = URLSession.shared
     session.downloadTask(with: url) { (dataFile, response, error) in
         let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0]+"/data.json"

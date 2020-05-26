@@ -33,6 +33,9 @@ extension ViewController: UITextFieldDelegate{
     func textFieldDidChangeSelection(_ textField: UITextField) {
         usdEqultyLabel.text = "\(valueTextField.text!).0 USD = \(valueTextField.text!).0 USD"
         value = (textField.text as NSString?)!.floatValue
+        if textField.text == ""{
+            value = 1.0
+        }
         tableView.reloadData()
     }
 }

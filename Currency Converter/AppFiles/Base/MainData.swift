@@ -1,6 +1,7 @@
 import Foundation
 
-let url =  "http://api.currencylayer.com/live?access_key=7b3227866aebfd9080832df2d7371022&currencies=USD,AUD,CAD,PLN,MXN&format=1"
+let currentUrl =  "http://api.currencylayer.com/live?access_key=7b3227866aebfd9080832df2d7371022&currencies=USD,AUD,CAD,PLN,MXN&format=1"
+let historyUrl = "http://api.currencylayer.com/historical?access_key=7b3227866aebfd9080832df2d7371022&date=2010-01-21&currencies=USD,AUD,CAD,PLN,MXN&format=1"
 var converterArray = [Converter]()
 var currencyArray = [NSNumber]()
 class Converter {
