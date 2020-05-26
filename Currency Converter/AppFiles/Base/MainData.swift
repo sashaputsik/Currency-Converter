@@ -21,7 +21,6 @@ class Converter {
 }
 
 func add(){
-    currencyArray.append(converterArray.first!.americarDollar)
     currencyArray.append(converterArray.first!.australianDollar)
     currencyArray.append(converterArray.first!.canadianDollar)
     currencyArray.append(converterArray.first!.mexicanPeso)

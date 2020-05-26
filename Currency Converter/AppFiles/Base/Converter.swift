@@ -24,4 +24,6 @@ func purseJson(){
     }
     converterArray = resultArray
     add()
+   
+   
 }

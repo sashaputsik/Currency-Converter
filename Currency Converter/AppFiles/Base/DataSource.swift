@@ -2,15 +2,18 @@ import Foundation
 
 
 class DataSource{
-  let imageName = ["Dollar.png",
+  let imageName = [
                    "ADollar.png",
                    "CDollar.png",
                    "MPeso.png",
                    "PZloty.png"]
-    let currencyName = ["American Dollar",
+    let currencyName = [
                         "Australian Dollar",
                         "Canadian Dollar",
                         "Mexican Peso",
                         "Polish Zloty"]
-    let sCurrencyName = ["USD","AUD","CAD","MXN","PLN"]
+    let sCurrencyName = ["AUD",
+                         "CAD",
+                         "MXN",
+                         "PLN"]
 }

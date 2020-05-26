@@ -9,7 +9,7 @@ extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier:"cell", for: indexPath) as? mainTableViewCell{
             cell.currencyImageView.image = UIImage(named: DataSource().imageName[indexPath.row])
-            cell.valueCurrencyLabel.text = "\(currencyArray[indexPath.row].doubleValue)"
+            cell.valueCurrencyLabel.text = "\(currencyArray[indexPath.row].floatValue*value)"
             cell.nameOfCurrencyLabel.text = DataSource().currencyName[indexPath.row]
             cell.sNameOfCurrencyLabel.text = DataSource().sCurrencyName[indexPath.row]
             let one = 1/currencyArray[indexPath.row].floatValue
@@ -27,4 +27,12 @@ extension ViewController:UITableViewDelegate{
         return 60.0
     }
     
+}
+
+extension ViewController: UITextFieldDelegate{
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        usdEqultyLabel.text = "\(valueTextField.text!).0 USD = \(valueTextField.text!).0 USD"
+        value = (textField.text as NSString?)!.floatValue
+        tableView.reloadData()
+    }
 }
