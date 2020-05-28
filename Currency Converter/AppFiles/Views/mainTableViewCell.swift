@@ -8,6 +8,7 @@ class mainTableViewCell: UITableViewCell {
     @IBOutlet weak var valueCurrencyLabel: UILabel!
     @IBOutlet weak var equeltyCurrencyLabel: UILabel!
     @IBOutlet weak var nameOfCurrencyLabel: UILabel!
+    @IBOutlet weak var valueChangeImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
      

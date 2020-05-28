@@ -2,17 +2,21 @@ import Foundation
 import UIKit
 
 extension ViewController: UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return currencyArray.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier:"cell", for: indexPath) as? mainTableViewCell{
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier:"cell",
+                                                    for: indexPath) as? mainTableViewCell{
+
             cell.currencyImageView.image = UIImage(named: DataSource().imageName[indexPath.row])
             cell.valueCurrencyLabel.text = "\(currencyArray[indexPath.row].floatValue*value)"
             cell.nameOfCurrencyLabel.text = DataSource().currencyName[indexPath.row]
             cell.sNameOfCurrencyLabel.text = DataSource().sCurrencyName[indexPath.row]
-            let one = 1/currencyArray[indexPath.row].floatValue
+            let one = currencyArray[indexPath.row].floatValue
             cell.equeltyCurrencyLabel.text = "1 \(DataSource().sCurrencyName[indexPath.row]) = \(one) USD"
         return cell
     }
@@ -23,11 +27,14 @@ extension ViewController: UITableViewDataSource{
 }
 extension ViewController:UITableViewDelegate{
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60.0
+    func tableView(_ tableView: UITableView,
+                   heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70.0
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+    func tableView(_ tableView: UITableView,
+                   didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath,
+                              animated: true)
     }
     
 }

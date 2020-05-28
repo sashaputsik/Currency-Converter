@@ -32,19 +32,24 @@ func loadHistory(of date: String, complitionHandler: (()->Void)?){
     let session = URLSession.shared
     session.downloadTask(with: url) { (data, response, error) in
         guard let data = data else{return}
-        let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0]+"/historyData.json"
+        let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory,
+                                                       .userDomainMask, true)[0]+"/historyData.json"
         let urlPath = URL(fileURLWithPath: path)
-        try? FileManager.default.copyItem(at: data, to: urlPath)
+        try? FileManager.default.copyItem(at: data,
+                                          to: urlPath)
         parseHistoryJson()
         addHistory()
         complitionHandler?()
     }.resume()
 }
 func parseHistoryJson(){
-    let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0]+"/historyData.json"
+    let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory,
+                                                   .userDomainMask, true)[0]+"/historyData.json"
     let urlPath = URL(fileURLWithPath: path)
     guard let data = try? Data(contentsOf: urlPath) else{return}
-    if let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? Dictionary<String,Any>{
+    if let json = try? JSONSerialization.jsonObject(with: data,
+                                                    options: .allowFragments) as? Dictionary<String,Any>{
+        print(json)
         let converter = Converter(dictionary: json)
         converterArray.append(converter)
         }

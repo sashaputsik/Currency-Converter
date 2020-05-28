@@ -1,5 +1,5 @@
 import UIKit
-
+import TweeTextField
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -7,7 +7,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var usdsCurrencyNameLabel: UILabel!
     @IBOutlet weak var usdCurrencyNameLabel: UILabel!
     @IBOutlet weak var usdEqultyLabel: UILabel!
-    @IBOutlet weak var valueTextField: UITextField!
+    @IBOutlet weak var valueTextField: TweeActiveTextField!
     @IBOutlet weak var timeUpdateLabel: UILabel!
     var refreshControl: UIRefreshControl!
     @IBOutlet weak var calculatorBackView: UIView!
@@ -46,13 +46,16 @@ class ViewController: UIViewController {
     }
     func refresher(){
         let refresh = UIRefreshControl()
-        refresh.addTarget(self, action: #selector(refresingCurrency), for: .valueChanged)
+        refresh.addTarget(self,
+                          action: #selector(refresingCurrency),
+                          for: .valueChanged)
         //refresh.endRefreshing()
         refreshControl = refresh
         
     }
     @objc func refresingCurrency(){
-        let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0]+"/data.json"
+        let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory,
+                                                       .userDomainMask, true)[0]+"/data.json"
         try? FileManager.default.removeItem(atPath: path)
         currencyArray.removeAll()
         loadData {
