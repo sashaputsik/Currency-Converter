@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     func date(){
         let date = Date()
         let f = DateFormatter()
-        f.dateFormat = "dd.MM-hh.mm"
+        f.dateFormat = "dd.MMM, hh.mm"
         dateS = f.string(from: date)
         timeUpdateLabel.text = "Update: "+dateS
     }

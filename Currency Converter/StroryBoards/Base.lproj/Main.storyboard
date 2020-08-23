@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ss-n2-kAm">
-                                <rect key="frame" x="0.0" y="147" width="375" height="280"/>
+                                <rect key="frame" x="0.0" y="127" width="375" height="280"/>
                                 <color key="backgroundColor" red="0.90912467239999994" green="0.92925274369999999" blue="0.94584649799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="7aS-ZH-mdn"/>
@@ -60,7 +60,7 @@
                                                     <rect key="frame" x="88" y="46" width="125" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -77,7 +77,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHR-Fn-3P8">
-                                <rect key="frame" x="6" y="30" width="363" height="88"/>
+                                <rect key="frame" x="6" y="10" width="363" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 fsddfds = fsd" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="60" translatesAutoresizingMaskIntoConstraints="NO" id="Vpp-6x-HFe">
                                         <rect key="frame" x="205" y="62" width="149" height="14"/>
@@ -92,7 +92,7 @@
                                         <color key="backgroundColor" red="0.20397678020000001" green="0.29978546499999997" blue="0.41611069439999998" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="activeLineColor">
@@ -141,7 +141,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRT-dC-vO5">
-                                <rect key="frame" x="6" y="126" width="33" height="16"/>
+                                <rect key="frame" x="6" y="106" width="33" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -157,7 +157,7 @@
                             <constraint firstItem="9ss-n2-kAm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="anm-zJ-x8u"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xHR-Fn-3P8" secondAttribute="trailing" constant="6" id="jf4-VY-Nsc"/>
                             <constraint firstItem="eRT-dC-vO5" firstAttribute="top" secondItem="xHR-Fn-3P8" secondAttribute="bottom" constant="8" id="jvr-3t-afm"/>
-                            <constraint firstItem="xHR-Fn-3P8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="kwF-oT-GG9"/>
+                            <constraint firstItem="xHR-Fn-3P8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="kwF-oT-GG9"/>
                             <constraint firstItem="SGE-OI-4Zz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="qsT-8s-yox"/>
                             <constraint firstItem="xHR-Fn-3P8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="vp5-Hn-yXr"/>
                         </constraints>
@@ -188,8 +188,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eV1-fQ-sWd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="331.5"/>
+                                <rect key="frame" x="0.0" y="65" width="375" height="300"/>
                                 <color key="backgroundColor" red="0.90912467239999994" green="0.92925274369999999" blue="0.94584649799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="eVc-PF-FRM"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="70" id="wUA-oD-SkU" customClass="MainTableViewCell" customModule="Currency_Converter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
@@ -220,7 +223,7 @@
                                                     <rect key="frame" x="90" y="44" width="125" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="up.png" translatesAutoresizingMaskIntoConstraints="NO" id="7aG-Nz-WID">
@@ -240,37 +243,40 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wq-I2-gQY">
-                                <rect key="frame" x="15" y="371.5" width="50" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Rt4-wC-MWP">
-                                <rect key="frame" x="0.0" y="402" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="370" width="375" height="248"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="-63115200">
                                     <!--1999-01-01 12:00:00 +0000-->
                                 </date>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History of Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo4-e7-Gmf">
+                                <rect key="frame" x="10" y="15" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7Io-vq-yuB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90912467239999994" green="0.92925274369999999" blue="0.94584649799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="top" secondItem="2wq-I2-gQY" secondAttribute="bottom" constant="5" id="4Ze-gB-xvb"/>
-                            <constraint firstItem="eV1-fQ-sWd" firstAttribute="trailing" secondItem="U5C-fN-Ht9" secondAttribute="trailing" id="EXr-aC-CDm"/>
-                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="bottom" secondItem="U5C-fN-Ht9" secondAttribute="bottom" id="Edu-1g-wH1"/>
-                            <constraint firstItem="eV1-fQ-sWd" firstAttribute="top" secondItem="U5C-fN-Ht9" secondAttribute="top" constant="20" id="Kqc-nt-Oc2"/>
-                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="trailing" secondItem="U5C-fN-Ht9" secondAttribute="trailing" id="P9U-jS-rmG"/>
-                            <constraint firstItem="2wq-I2-gQY" firstAttribute="top" secondItem="eV1-fQ-sWd" secondAttribute="bottom" constant="20" id="QhM-9P-fnt"/>
-                            <constraint firstItem="2wq-I2-gQY" firstAttribute="leading" secondItem="U5C-fN-Ht9" secondAttribute="leading" constant="15" id="So0-sT-kib"/>
-                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="leading" secondItem="U5C-fN-Ht9" secondAttribute="leading" id="aIw-Qj-y6R"/>
-                            <constraint firstItem="eV1-fQ-sWd" firstAttribute="leading" secondItem="U5C-fN-Ht9" secondAttribute="leading" id="hR6-Mk-gbH"/>
+                            <constraint firstItem="eV1-fQ-sWd" firstAttribute="leading" secondItem="U5C-fN-Ht9" secondAttribute="leading" id="0nf-Fw-i2j"/>
+                            <constraint firstItem="fo4-e7-Gmf" firstAttribute="top" secondItem="U5C-fN-Ht9" secondAttribute="top" constant="15" id="Flp-uO-O4s"/>
+                            <constraint firstItem="eV1-fQ-sWd" firstAttribute="top" secondItem="fo4-e7-Gmf" secondAttribute="bottom" constant="20" id="HlJ-ft-4EE"/>
+                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="leading" secondItem="U5C-fN-Ht9" secondAttribute="leading" id="NvC-Ua-L18"/>
+                            <constraint firstItem="fo4-e7-Gmf" firstAttribute="leading" secondItem="U5C-fN-Ht9" secondAttribute="leading" constant="10" id="QMG-7R-zB7"/>
+                            <constraint firstItem="eV1-fQ-sWd" firstAttribute="trailing" secondItem="U5C-fN-Ht9" secondAttribute="trailing" id="UV0-9x-xem"/>
+                            <constraint firstItem="U5C-fN-Ht9" firstAttribute="trailing" secondItem="fo4-e7-Gmf" secondAttribute="trailing" constant="10" id="bT6-Zo-Yva"/>
+                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="top" secondItem="eV1-fQ-sWd" secondAttribute="bottom" constant="5" id="mOC-Lj-ChH"/>
+                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="trailing" secondItem="U5C-fN-Ht9" secondAttribute="trailing" id="uvE-TZ-Ds7"/>
+                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="bottom" secondItem="U5C-fN-Ht9" secondAttribute="bottom" id="wcn-Iu-Vf9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U5C-fN-Ht9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="history.png" id="rc0-hv-rOg"/>
                     <connections>
-                        <outlet property="currentTimeLabel" destination="2wq-I2-gQY" id="v2U-KS-UCU"/>
                         <outlet property="datePicker" destination="Rt4-wC-MWP" id="Wf0-3b-Ws3"/>
                         <outlet property="tableView" destination="eV1-fQ-sWd" id="Iel-2t-qiY"/>
                     </connections>

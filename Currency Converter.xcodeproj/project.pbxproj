@@ -83,8 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				9FD7466C2473E1A100454143 /* AppFiles */,
+				9FD7466D2473E1AF00454143 /* Base */,
+				9FD746702473E1C500454143 /* Extensions */,
 				9FD7466F2473E1BE00454143 /* Modules */,
 				9FD746722473E21800454143 /* StroryBoards */,
+				9FD7466E2473E1B600454143 /* Views */,
 			);
 			path = "Currency Converter";
 			sourceTree = "<group>";
@@ -98,9 +101,6 @@
 				9FD746572473E15700454143 /* SceneDelegate.swift */,
 				9FD7465E2473E15700454143 /* Currency_Converter.xcdatamodeld */,
 				9FD746662473E15900454143 /* Info.plist */,
-				9FD746702473E1C500454143 /* Extensions */,
-				9FD7466E2473E1B600454143 /* Views */,
-				9FD7466D2473E1AF00454143 /* Base */,
 			);
 			path = AppFiles;
 			sourceTree = "<group>";

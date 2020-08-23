@@ -3,11 +3,9 @@ import UIKit
 class HistoryViewController: UIViewController {
         @IBOutlet weak var datePicker: UIDatePicker!
         @IBOutlet weak var tableView: UITableView!
-        @IBOutlet weak var currentTimeLabel: UILabel!
         var dateString = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        addedCurrentDate()
         tableView.delegate = self
         tableView.dataSource = self
         datePicker.addTarget(self,
@@ -33,13 +31,6 @@ class HistoryViewController: UIViewController {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-            print(historyCurrencyArray)
         }
-    }
-    func addedCurrentDate(){
-        let date = Date()
-        let dateF = DateFormatter()
-        dateF.dateFormat = "YYYY.MM.dd"
-        currentTimeLabel.text = "Current Date: "+dateF.string(from: date)
     }
 }
