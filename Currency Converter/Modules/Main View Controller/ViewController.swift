@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         usd()
-        loadData {
+        Parse().loadData {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
                                                        .userDomainMask, true)[0]+"/data.json"
         try? FileManager.default.removeItem(atPath: path)
         currencyArray.removeAll()
-        loadData {
+        Parse().loadData {
         DispatchQueue.main.async {
             self.tableView.reloadData()
             self.refreshControl.endRefreshing()

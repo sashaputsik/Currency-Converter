@@ -15,13 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ss-n2-kAm">
-                                <rect key="frame" x="0.0" y="138" width="375" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ss-n2-kAm">
+                                <rect key="frame" x="0.0" y="147" width="375" height="280"/>
                                 <color key="backgroundColor" red="0.90912467239999994" green="0.92925274369999999" blue="0.94584649799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="7aS-ZH-mdn"/>
+                                    <constraint firstAttribute="width" constant="375" id="jm9-YO-hUD"/>
+                                </constraints>
                                 <color key="separatorColor" red="0.8303588033" green="0.4367777705" blue="0.61272484059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="70" id="d8c-0F-ey2" customClass="mainTableViewCell" customModule="Currency_Converter" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="70" id="d8c-0F-ey2" customClass="MainTableViewCell" customModule="Currency_Converter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d8c-0F-ey2" id="iKc-bR-SfG">
@@ -73,16 +76,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRT-dC-vO5">
-                                <rect key="frame" x="16" y="116" width="162" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHR-Fn-3P8">
-                                <rect key="frame" x="6" y="20" width="362" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHR-Fn-3P8">
+                                <rect key="frame" x="6" y="30" width="363" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 fsddfds = fsd" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="60" translatesAutoresizingMaskIntoConstraints="NO" id="Vpp-6x-HFe">
                                         <rect key="frame" x="205" y="62" width="149" height="14"/>
@@ -134,17 +129,38 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20397678020000001" green="0.29978546499999997" blue="0.41611069439999998" alpha="0.84083369006849318" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="LQb-aM-ySg"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGE-OI-4Zz">
-                                <rect key="frame" x="13" y="442" width="346" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Currency Converter, located on site, offers the opportunity to take for the calculation of any of the interest rates, it may be the dollar, the euro, the Russian ruble, and others. To use the calculator online currency, you just need to fill in the interest indicator and add additional currency if necessary . Thereafter, with the main field and the specified currency immediately reveal the exact result. Thanks to the handy currency converter, each user will be able online to instantly translate the most popular currency at the current exchange rate. Please use the online currency converter CBR.</mutableString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGE-OI-4Zz">
+                                <rect key="frame" x="13" y="456.5" width="349" height="143.5"/>
+                                <string key="text">Currency Converter, located on site, offers the opportunity to take for the calculation of any of the interest rates, it may be the dollar, the euro, the Russian ruble, and others. To use the calculator online currency, you just need to fill in the interest indicator and add additional currency if necessary . Thereafter, with the main field and the specified currency immediately reveal the exact result. Thanks to the handy currency converter, each user will be able online to instantly translate the most popular currency at the current exchange rate. Please use the online currency converter CBR.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRT-dC-vO5">
+                                <rect key="frame" x="6" y="126" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90912467239999994" green="0.92925274369999999" blue="0.94584649799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9ss-n2-kAm" firstAttribute="top" secondItem="eRT-dC-vO5" secondAttribute="bottom" constant="5" id="2dV-Sn-pN3"/>
+                            <constraint firstItem="eRT-dC-vO5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="CsP-3a-RjM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SGE-OI-4Zz" secondAttribute="trailing" constant="13" id="FsO-7J-ksn"/>
+                            <constraint firstItem="9ss-n2-kAm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R4k-lV-54j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SGE-OI-4Zz" secondAttribute="bottom" constant="18" id="RwH-Ln-I1V"/>
+                            <constraint firstItem="9ss-n2-kAm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="anm-zJ-x8u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xHR-Fn-3P8" secondAttribute="trailing" constant="6" id="jf4-VY-Nsc"/>
+                            <constraint firstItem="eRT-dC-vO5" firstAttribute="top" secondItem="xHR-Fn-3P8" secondAttribute="bottom" constant="8" id="jvr-3t-afm"/>
+                            <constraint firstItem="xHR-Fn-3P8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="kwF-oT-GG9"/>
+                            <constraint firstItem="SGE-OI-4Zz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="qsT-8s-yox"/>
+                            <constraint firstItem="xHR-Fn-3P8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="vp5-Hn-yXr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Current" image="bank.png" id="0dA-Uk-bBF"/>
@@ -171,20 +187,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Rt4-wC-MWP">
-                                <rect key="frame" x="0.0" y="345" width="375" height="273"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="-63115200">
-                                    <!--1999-01-01 12:00:00 +0000-->
-                                </date>
-                            </datePicker>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eV1-fQ-sWd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eV1-fQ-sWd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="331.5"/>
                                 <color key="backgroundColor" red="0.90912467239999994" green="0.92925274369999999" blue="0.94584649799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="70" id="wUA-oD-SkU" customClass="mainTableViewCell" customModule="Currency_Converter" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="70" id="wUA-oD-SkU" customClass="MainTableViewCell" customModule="Currency_Converter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wUA-oD-SkU" id="P7g-Kh-g3i">
@@ -233,15 +240,32 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wq-I2-gQY">
-                                <rect key="frame" x="16" y="319" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wq-I2-gQY">
+                                <rect key="frame" x="15" y="371.5" width="50" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Rt4-wC-MWP">
+                                <rect key="frame" x="0.0" y="402" width="375" height="216"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-63115200">
+                                    <!--1999-01-01 12:00:00 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="0.90912467239999994" green="0.92925274369999999" blue="0.94584649799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="top" secondItem="2wq-I2-gQY" secondAttribute="bottom" constant="5" id="4Ze-gB-xvb"/>
+                            <constraint firstItem="eV1-fQ-sWd" firstAttribute="trailing" secondItem="U5C-fN-Ht9" secondAttribute="trailing" id="EXr-aC-CDm"/>
+                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="bottom" secondItem="U5C-fN-Ht9" secondAttribute="bottom" id="Edu-1g-wH1"/>
+                            <constraint firstItem="eV1-fQ-sWd" firstAttribute="top" secondItem="U5C-fN-Ht9" secondAttribute="top" constant="20" id="Kqc-nt-Oc2"/>
+                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="trailing" secondItem="U5C-fN-Ht9" secondAttribute="trailing" id="P9U-jS-rmG"/>
+                            <constraint firstItem="2wq-I2-gQY" firstAttribute="top" secondItem="eV1-fQ-sWd" secondAttribute="bottom" constant="20" id="QhM-9P-fnt"/>
+                            <constraint firstItem="2wq-I2-gQY" firstAttribute="leading" secondItem="U5C-fN-Ht9" secondAttribute="leading" constant="15" id="So0-sT-kib"/>
+                            <constraint firstItem="Rt4-wC-MWP" firstAttribute="leading" secondItem="U5C-fN-Ht9" secondAttribute="leading" id="aIw-Qj-y6R"/>
+                            <constraint firstItem="eV1-fQ-sWd" firstAttribute="leading" secondItem="U5C-fN-Ht9" secondAttribute="leading" id="hR6-Mk-gbH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="U5C-fN-Ht9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="history.png" id="rc0-hv-rOg"/>

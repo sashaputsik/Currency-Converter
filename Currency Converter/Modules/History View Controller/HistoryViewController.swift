@@ -14,7 +14,7 @@ class HistoryViewController: UIViewController {
                              action: #selector(dateChange),
                              for: .valueChanged)
         datePicker.maximumDate = Date()
-        loadHistory(of: dateString) {
+        Parse().loadHistory(of: dateString) {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -29,7 +29,7 @@ class HistoryViewController: UIViewController {
                                                        .userDomainMask, true)[0]+"/historyData.json"
         try? FileManager.default.removeItem(atPath: path)
         historyCurrencyArray.removeAll()
-        loadHistory(of: dateString) {
+        Parse().loadHistory(of: dateString) {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

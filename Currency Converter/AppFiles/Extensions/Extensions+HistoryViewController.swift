@@ -9,11 +9,8 @@ extension HistoryViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell",
-                                                    for: indexPath) as? mainTableViewCell{
-            cell.currencyImageView.image = UIImage(named: DataSource().imageName[indexPath.row])
-            cell.nameOfCurrencyLabel.text = DataSource().currencyName[indexPath.row]
-            cell.sNameOfCurrencyLabel.text = DataSource().sCurrencyName[indexPath.row]
-            cell.valueCurrencyLabel.text = "\(historyCurrencyArray[indexPath.row].floatValue)"
+                                                    for: indexPath) as? MainTableViewCell{
+            cell.setHistoryCurrency(indexPath: indexPath)
             if currencyArray[indexPath.row].floatValue > historyCurrencyArray[indexPath.row].floatValue{
                 cell.valueChangeImageView.image = UIImage(named: "up.png")
             }

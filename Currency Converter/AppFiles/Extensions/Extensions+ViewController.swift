@@ -10,14 +10,10 @@ extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier:"cell",
-                                                    for: indexPath) as? mainTableViewCell{
+                                                    for: indexPath) as? MainTableViewCell{
 
-            cell.currencyImageView.image = UIImage(named: DataSource().imageName[indexPath.row])
-            cell.valueCurrencyLabel.text = "\(currencyArray[indexPath.row].floatValue*value)"
-            cell.nameOfCurrencyLabel.text = DataSource().currencyName[indexPath.row]
-            cell.sNameOfCurrencyLabel.text = DataSource().sCurrencyName[indexPath.row]
             let one = currencyArray[indexPath.row].floatValue
-            cell.equeltyCurrencyLabel.text = "1 \(DataSource().sCurrencyName[indexPath.row]) = \(one) USD"
+            cell.setCurrency(one: one, indexPath: indexPath, value: value)
         return cell
     }
         return UITableViewCell()
