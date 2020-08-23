@@ -1,8 +1,8 @@
 import UIKit
 
 class HistoryViewController: UIViewController {
-        @IBOutlet weak var datePicker: UIDatePicker!
-        @IBOutlet weak var tableView: UITableView!
+        @IBOutlet private(set) var datePicker: UIDatePicker!
+        @IBOutlet private(set) var tableView: UITableView!
         var dateString = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +16,9 @@ class HistoryViewController: UIViewController {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-            print(historyCurrencyArray)
         }
     }
+    
     @objc func dateChange(){
         let dateF = DateFormatter()
         dateF.dateFormat = "yyyy-MM-dd"

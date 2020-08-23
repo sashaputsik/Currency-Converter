@@ -11,7 +11,6 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var valueChangeImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-     
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

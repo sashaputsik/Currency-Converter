@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-
+//MARK: UITableViewDataSource
 extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
@@ -9,18 +9,15 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier:"cell",
-                                                    for: indexPath) as? MainTableViewCell{
-
-            let one = currencyArray[indexPath.row].floatValue
-            cell.setCurrency(one: one, indexPath: indexPath, value: value)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.id,
+                                                       for: indexPath) as? MainTableViewCell else{ return UITableViewCell()}
+        let one = currencyArray[indexPath.row].floatValue
+        cell.setCurrency(one: one, indexPath: indexPath, value: value)
         return cell
     }
-        return UITableViewCell()
-    }
-    
-    
 }
+
+//MARK: UITableViewDelegate
 extension ViewController:UITableViewDelegate{
     
     func tableView(_ tableView: UITableView,
@@ -35,6 +32,7 @@ extension ViewController:UITableViewDelegate{
     
 }
 
+//MARK: UITextFieldDelegate
 extension ViewController: UITextFieldDelegate{
     func textFieldDidChangeSelection(_ textField: UITextField) {
         usdEqultyLabel.text = "\(valueTextField.text!).0 USD = \(valueTextField.text!).0 USD"

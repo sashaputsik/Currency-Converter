@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+//MARK: UITableViewDataSource
 extension HistoryViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
@@ -8,7 +9,7 @@ extension HistoryViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell",
+        if let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.id,
                                                     for: indexPath) as? MainTableViewCell{
             cell.setHistoryCurrency(indexPath: indexPath)
             if currencyArray[indexPath.row].floatValue > historyCurrencyArray[indexPath.row].floatValue{
@@ -24,9 +25,9 @@ extension HistoryViewController: UITableViewDataSource{
         }
         return UITableViewCell()
     }
-    
-    
 }
+
+//MARK: UITableViewDelegate
 extension HistoryViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView,
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -35,5 +36,12 @@ extension HistoryViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+//MARK: UITableViewCell
+extension UITableViewCell{
+    public static var id: String{
+        return "cell"
     }
 }
