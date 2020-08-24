@@ -14,10 +14,13 @@ class ViewController: UIViewController {
     public var value: Float = 1.0
     override func viewDidLoad() {
         super.viewDidLoad()
-        calculatorBackView.layer.cornerRadius = Appearence().cornerRadius
+        calculatorBackView.layer.cornerRadius = Appearance().cornerRadius
         date()
         refresher()
         tableView.addSubview(refreshControl)
+        let dismissKeyboard = UITapGestureRecognizer(target: self,
+                                                     action: #selector(setDismissKeyboard))
+        view.addGestureRecognizer(dismissKeyboard)
         Parse().loadData {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -39,6 +42,11 @@ class ViewController: UIViewController {
         }
         }
         date()
+    }
+    @objc
+    private func setDismissKeyboard(){
+        valueTextField.endEditing(true)
+        view.resignFirstResponder()
     }
 }
 

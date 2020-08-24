@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+
 //MARK: UITableViewDataSource
 extension HistoryViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView,
@@ -9,21 +10,19 @@ extension HistoryViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.id,
-                                                    for: indexPath) as? MainTableViewCell{
-            cell.setHistoryCurrency(indexPath: indexPath)
-            if currencyArray[indexPath.row].floatValue > historyCurrencyArray[indexPath.row].floatValue{
-                cell.valueChangeImageView.image = UIImage(named: "up.png")
-            }
-            else if currencyArray[indexPath.row].floatValue < historyCurrencyArray[indexPath.row].floatValue{
-                cell.valueChangeImageView.image = UIImage(named: "down.png")
-            }
-            else{
-                cell.valueChangeImageView.image = UIImage(named: "equal.png")
-            }
-            return cell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.id,
+                                                       for: indexPath) as? MainTableViewCell else{ return UITableViewCell()}
+        cell.setHistoryCurrency(indexPath: indexPath)
+        if currencyArray[indexPath.row].floatValue > historyCurrencyArray[indexPath.row].floatValue{
+            cell.valueChangeImageView.image = UIImage(named: "up.png")
         }
-        return UITableViewCell()
+        else if currencyArray[indexPath.row].floatValue < historyCurrencyArray[indexPath.row].floatValue{
+            cell.valueChangeImageView.image = UIImage(named: "down.png")
+        }
+        else{
+            cell.valueChangeImageView.image = UIImage(named: "equal.png")
+        }
+        return cell
     }
 }
 
@@ -35,7 +34,8 @@ extension HistoryViewController: UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath,
+                              animated: true)
     }
 }
 
